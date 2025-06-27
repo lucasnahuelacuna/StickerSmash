@@ -11,13 +11,13 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Pressable style={styles.card} onPress={() => router.push('/counter')}>
-        <Text>Counter</Text>
+        <Text style={styles.text}>Counter</Text>
       </Pressable>
       <Pressable style={styles.card} onPress={() => router.push('/todolist')}>
-        <Text>Todo List</Text>
+        <Text style={styles.text}>Todo List</Text>
       </Pressable>
       <Pressable style={styles.card} onPress={() => router.push('/apirequest')}>
-        <Text>Api Request</Text>
+        <Text style={styles.text}>Api Request</Text>
       </Pressable>
     </View>
   );
@@ -26,14 +26,20 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 15
+    paddingHorizontal: 15,
+    backgroundColor: '#fff'
   },
   card: {
-    backgroundColor: '#ccc',
+    backgroundColor: '#eee',
     height: 100,
     justifyContent: 'center',
     marginVertical: 25,
     alignItems: 'center',
-    borderRadius: 10
+    borderRadius: 10,
+    elevation: 2
+  },
+  text: {
+    fontSize: 16,
+    fontWeight: 'bold'
   }
 });
