@@ -7,6 +7,8 @@ export default function RootLayout() {
       <Stack.Screen name="counter" options={{ headerTitle: 'Counter' }} />
       <Stack.Screen name="todolist" options={{ headerTitle: 'Todo List' }} />
       <Stack.Screen name="apirequest" options={{ headerTitle: 'Api Request' }} />
+      <Stack.Screen name="styles" options={{ headerTitle: 'Styles' }} />
+      <Stack.Screen name="params" options={{ headerTitle: 'Params' }} />
     </Stack>
   );
 }

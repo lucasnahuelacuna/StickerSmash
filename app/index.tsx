@@ -19,6 +19,15 @@ export default function Index() {
       <Pressable style={styles.card} onPress={() => router.push('/apirequest')}>
         <Text style={styles.text}>Api Request</Text>
       </Pressable>
+      <Pressable style={styles.card} onPress={() => router.push('/styles')}>
+        <Text style={styles.text}>Styles</Text>
+      </Pressable>
+      <Pressable style={styles.card} onPress={() => router.push({
+        pathname: '/params',
+        params: { id: 123, name: 'Anthony Hopkins'}
+      })}>
+        <Text style={styles.text}>Params</Text>
+      </Pressable>
     </View>
   );
 }
